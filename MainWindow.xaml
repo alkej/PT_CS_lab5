@@ -1,0 +1,38 @@
+﻿<Window x:Class="PT_lab5.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PT_lab5"
+        mc:Ignorable="d"
+        Title="178947 PT Lab 5" Height="451.5" Width="509">
+    <Grid Margin="0,0,2,5">
+        <TextBox x:Name="KValueTextBox" HorizontalAlignment="Left" Height="20" Margin="40,34,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="NValueTextBox" HorizontalAlignment="Left" Height="20" Margin="40,59,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label Content="K" HorizontalAlignment="Left" Margin="10,31,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.487,1.846"/>
+        <Label Content="N" HorizontalAlignment="Left" Margin="8,55,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="TasksButton" Click="TasksButton_Click" Content="Tasks" HorizontalAlignment="Left" Margin="172,34,0,0" VerticalAlignment="Top" Width="74"/>
+        <Button x:Name="DelegatesButton" Click="DelegatesButton_Click" Content="Delegates" HorizontalAlignment="Left" Margin="172,59,0,0" VerticalAlignment="Top" Width="74"/>
+        <Button x:Name="AsyncAwaitButton" Click="AsyncAwaitButton_Click" Content="Async/Await" HorizontalAlignment="Left" Margin="172,84,0,0" VerticalAlignment="Top" Width="74"/>
+        <TextBox x:Name="TasksOutTextBox" HorizontalAlignment="Left" Height="20" Margin="257,34,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="96"/>
+        <TextBox x:Name="DelegatestTextBox" HorizontalAlignment="Left" Height="20" Margin="257,61,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="97"/>
+        <TextBox x:Name="AsyncAwaitTextBox" HorizontalAlignment="Left" Height="20" Margin="257,86,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="97"/>
+
+        <Label Content="Fibonacci" HorizontalAlignment="Left" Margin="40,138,0,0" VerticalAlignment="Top"/>
+        <Label Content="i" HorizontalAlignment="Left" Margin="22,163,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="iFibTextBox" HorizontalAlignment="Left" Height="20" Margin="40,169,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="176"/>
+        <Button x:Name="FibGetButton" Click="FibGetButton_Click"  Content="Get" HorizontalAlignment="Left" Margin="40,195,0,0" VerticalAlignment="Top" Width="74"/>
+        <TextBox x:Name="iFibOutTextBox" HorizontalAlignment="Left" Height="20" Margin="119,195,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="97"/>
+        <ProgressBar x:Name="FibProgressBar" HorizontalAlignment="Left" Height="19" Margin="40,220,0,0" VerticalAlignment="Top" Width="176"/>
+
+        
+        <Label Content="Kompresja" HorizontalAlignment="Left" Margin="257,138,0,0" VerticalAlignment="Top" Width="71" Height="26"/>
+        <Button x:Name="CompressButton" Click="CompressButton_Click" Content="Compress" HorizontalAlignment="Left" VerticalAlignment="Top" Width="74" Margin="257,169,0,0" />
+        <Button x:Name="DecompressButton" Click="DecompressButton_Click"  Content="Decompress" HorizontalAlignment="Left" VerticalAlignment="Top" Width="74" Margin="336,169,0,0"/>
+
+        <Label Content="DNS" HorizontalAlignment="Left" Margin="40,250,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="DNSOutTextBox" HorizontalAlignment="Left" Height="100" Margin="40,276,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="155"/>
+        <Button x:Name="DNSResolveButton" Click="DNSResolveButton_Click"  Content="Resolve" HorizontalAlignment="Left" Margin="79,253,0,0" VerticalAlignment="Top" Width="74"/>
+
+    </Grid>
+</Window>
